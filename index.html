@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head 
+         content must come *after* these tags  These tags make my web page responsive-->
+
+<head>
+    <title>Url Shortener Mircorservice</title>
+    <!-- Bootstrap --This will include Bootstrap CSS into your web page.-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+    li {margin-bottom: 12px}
+        
+    
+
+</style>
+    
+    
+</head>
+
+
+<body>
+    <div class='container'>
+        <div class = 'row'>
+            <h1>FreeCodeCamp API Basejump: URL Shortener Microservice</h1>
+        </div>
+        <div class = 'row'>
+            <blockquote>
+                <p>User stories:</p>
+                <ol>
+                    <li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+                    <li>When I visit that shortened URL, it will redirect me to my original link.</li>                    
+                </ol>
+            </blockquote>
+        </div>
+        <div class = 'row'>
+            <h3>
+                Example creation usage:
+            </h3>
+            <code>
+                https://little-url.herokuapp.com/new/https://www.google.com
+            </code><br>
+            <code>
+                https://little-url.herokuapp.com/new/http://foo.com:80
+            </code> 
+       
+            <h3>
+                Example creation output:
+            </h3>
+            <code>
+               { "original_url":"http://foo.com:80", "short_url":"https://little-url.herokuapp.com/8170" }
+            </code>     
+            <h3>
+                Usage:
+            </h3>
+            <code>
+              https://little-url.herokuapp.com/2871
+            </code>     
+            <h3>
+                Will redirect to:
+            </h3>
+            <code>
+             https://www.google.com/
+            </code>
+            
+        </div>
+        
+        
+    </div><!--container-->    
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+</body>
+
+</html>
