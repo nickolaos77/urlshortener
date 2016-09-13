@@ -16,7 +16,7 @@ var urlData = mongoose.model('urlData', urlDataSchema );
 
 var numberArray = [];
 
-for(var i = 1; i <= 10; i++){
+for(var i = 1; i <= 9999; i++){
     numberArray.push(i);
 }
 function UrlChecker(url){
@@ -93,7 +93,7 @@ var randomNumber = function () {
         var sendData = function(item){ 
      return   new Promise (function(resolve,reject){
          res.send({"original_url":item.longurl,
-                   "short_url":"https://little-url.herokuapp.com/" + item.shorturl
+                   "short_url":"https://npap-shorturl.herokuapp.com/" + item.shorturl
                   });      
 //         urlData.find()         <-- uncomment these 4 lines to get all the collection entries
 //        .then(function(doc){
