@@ -4,7 +4,10 @@ var validUrl = require('valid-url');
 var mongoose = require('mongoose');
 //url hidden according to the wiki
 var dburl = process.env.MONGOLAB_URI; //https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Using-MongoDB-And-Deploying-To-Heroku
-mongoose.connect('mongodb://nikolaos:vrastoryzi1'+')'+'@ds029496.mlab.com:29496/urlshort'); //mlab db url
+//SET MONGOLAB_URI="mongodb://username:password@ds01316.mlab.com:1316/food" The quotes are wrong (the correct format is without the quotes)
+console.log(dburl);
+mongoose.connect(dburl); //mlab db url
+
 var Schema = mongoose.Schema;
 var PORT = process.env.PORT || 3000; //for deploying in heroku
 var urlDataSchema = new Schema({

@@ -92,7 +92,7 @@ export MONGOLAB_URI="mongodb://username:password@ds01316.mlab.com:1316/food"
 
 For Windows users:
 
-SET MONGOLAB_URI="mongodb://username:password@ds01316.mlab.com:1316/food"
+SET MONGOLAB_URI="mongodb://username:password@ds01316.mlab.com:1316/food" Εδώ τα εισαγωγικά είναι λάθος (χωρίς εισαγωγικά είναι το σωστό)
 
 After setting the Environment variables you need to call the Environment Variable into your code. You can do it by typing this
 
